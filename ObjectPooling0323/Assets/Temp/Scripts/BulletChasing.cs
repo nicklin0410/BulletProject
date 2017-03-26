@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletChasing : BulletBehavior {
 
-    GameObject target;
+    public GameObject target;
 
     void Start() {
         target = GameObject.FindWithTag("target");

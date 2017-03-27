@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4047492408098968}
   - component: {fileID: 114362891907309130}
   m_Layer: 0
-  m_Name: TurretChild
+  m_Name: TurretParent2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,11 +51,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26c10f8cb30a6f42906b2a24dcfd65e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  turretPrefab: {fileID: 0}
-  bulletPrefab: {fileID: 1121124758583026, guid: 7d4c6eaf2a60a0544b2ac43c12a8d1c1,
+  m_target: {fileID: 0}
+  m_turretPrefab: {fileID: 0}
+  m_bulletPrefab: {fileID: 1644314975199744, guid: 94d8ce6f37de343488f8daa47e02b822,
     type: 2}
-  bulletPool: []
+  m_turretPoints: []
+  m_bulletPool: []
   fireMethod: 0
-  fireTime: 0
-  bufferTime: 0
+  m_fireTime: 0
+  m_bufferTime: 0
+  m_rotateSpeed: 0
+  bulletParent: {fileID: 114647470061576942, guid: 7a348b9529c61c140876673764809d46,
+    type: 2}

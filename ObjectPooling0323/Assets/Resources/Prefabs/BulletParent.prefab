@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65609018526918104}
   - component: {fileID: 23287599045473760}
   - component: {fileID: 114845511760198280}
+  - component: {fileID: 114181584246379684}
   m_Layer: 0
   m_Name: BulletParent
   m_TagString: Untagged
@@ -93,6 +94,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114181584246379684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1241681913100970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 225896beae756074d91be49ad54ae68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_target: {fileID: 0}
+  m_turretPrefab: {fileID: 0}
+  m_bulletPrefab: {fileID: 1762795139776412, guid: 7a348b9529c61c140876673764809d46,
+    type: 2}
+  m_turretPoints: []
+  m_bulletPool: []
+  fireMethod: 0
+  m_fireTime: 0
+  m_bufferTime: 0
+  m_rotateSpeed: 0
+  firePoint: {fileID: 1106154193693832, guid: 95d2832fa7bf3624cb095db72c10fd5d, type: 2}
+  m_Point: 0
+  m_Children: []
+  axises: 
 --- !u!114 &114845511760198280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -104,10 +130,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1bc9332edb987b4e83699010744b57a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletSpeed: 0.5
-  destroyTime: 5
-  m_Children: []
-  m_Point: 0
-  axis: 0
-  axises: 
-  go: {fileID: 1398531047749194, guid: cd173dc660d841f46980ed820d553f29, type: 2}
+  m_bulletSpeed: 1.02
+  m_destroyTime: 2.16

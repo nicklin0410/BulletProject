@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BulletBehavior : MonoBehaviour {
-    public float bulletSpeed;
-    public float destroyTime;
+    public float m_bulletSpeed;
+    public float m_destroyTime;
 
     void Awake() {
 
@@ -15,11 +15,11 @@ public class BulletBehavior : MonoBehaviour {
     }
 
     protected virtual void Update() {
-        transform.Translate(0, 0, bulletSpeed * Time.deltaTime);
+        transform.Translate(0, 0, m_bulletSpeed * Time.deltaTime);
     }
 
     protected virtual void OnEnable() {
-        Invoke("Clear", destroyTime);
+        Invoke("Clear", m_destroyTime);
     }
 
     protected virtual void Clear() {

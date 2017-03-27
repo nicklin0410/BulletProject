@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class GeneralObjectPooling : MonoBehaviour {
 
-    [SerializeField]
     public static GeneralObjectPooling current;
-    [SerializeField]
-    public GameObject pooledObject1;
-    [SerializeField]
-    public GameObject pooledObject2;
+    //[SerializeField]
+    //private GameObject pooledObject1;
+    //[SerializeField]
+    //private GameObject pooledObject2;
 
     public int pooledAmount;
     public bool canGrow;
 
-    [SerializeField]
-    public List<GameObject> pooledList1 = new List<GameObject>();
-    [SerializeField]
-    public List<GameObject> pooledList2 = new List<GameObject>();
+    //[SerializeField]
+    //private List<GameObject> pooledList1 = new List<GameObject>();
+    //[SerializeField]
+    //private List<GameObject> pooledList2 = new List<GameObject>();
 
     void Awake() {
         //pooledAmount = 720;
+        //canGrow = true;
         current = this;
     }
 

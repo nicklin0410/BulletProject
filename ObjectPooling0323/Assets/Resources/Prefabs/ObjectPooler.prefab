@@ -51,9 +51,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1814937dfe1f24cb598a2b13e9d39e2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pooledObject1: {fileID: 0}
-  pooledObject2: {fileID: 0}
   pooledAmount: 20
   canGrow: 1
-  pooledList1: []
-  pooledList2: []
